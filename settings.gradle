@@ -8,7 +8,6 @@
  */
 
 rootProject.name = 'full-flow'
-include('lib')
 
 include 'full-flow'
 project(":full-flow").projectDir.mkdirs()
