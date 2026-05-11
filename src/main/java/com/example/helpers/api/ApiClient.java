@@ -27,7 +27,7 @@ public class ApiClient {
     @Step ("GET request to {endpoint}")
     public Response get(String endpoint) {
         return given()
-                .baseUri(baseUrl)
+                    .baseUri(baseUrl)
                 .when()
                 .get(endpoint);
     }
@@ -37,4 +37,5 @@ public class ApiClient {
         Allure.attachment("Response", response.getBody().prettyPrint());
         response.then().statusCode(expectedStatusCode);
     }
+
 }
